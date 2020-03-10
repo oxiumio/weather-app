@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { convertLocation } from "../../redux/actions/weather.actions";
+import "./LocationSelector.css";
 
 class LocationSelector extends Component {
   state = {
@@ -15,27 +16,27 @@ class LocationSelector extends Component {
       this.props.convertLocation(this.state.location)
   }
 
+  checkAndExecute = (ev) => {
+    if (ev.key === "Enter") {
+      this.convertLocationGetForecast();
+    }
+  }
+
   render() {
     const { location } = this.state;
 
     return (
-        <>
-      <input
-        type="text"
-        value={location}
-        onChange={this.setLocation}
-        placeholder="Type in location | Ex: Seattle"
-      />
-      <button disabled={!location} onClick={this.convertLocationGetForecast}>Check weather</button>
-      </>
+        <div className="input-container">
+          <input
+            type="text"
+            value={location}
+            onChange={this.setLocation}
+            placeholder="Type in location | Ex: Seattle"
+            onKeyDown={this.checkAndExecute}
+            />          
+      </div>
     );
   }
-}
-
-const mapStateToProps = weatherState => {
-    return {
-        weatherState
-    }
 }
 
 export default connect(null, { convertLocation })(LocationSelector);

@@ -9,11 +9,7 @@ export default function(state = initState, action) {
         case("SET_WEATHER"):
             return {...state, weather: action.weather};
         case("CLEAR_WEATHER"):
-            return {...state, weather: null}            
-        case("SET_LOCATION"):
-            return {...state, locationOptions: action.locationOptions}
-        case("CLEAR_LOCATION"):
-            return {...state, locationOptions: []}
+            return {...state, weather: null}                    
         case("SET_ERROR"):
             return {...state, error: action.error};
         case("CLEAR_ERROR"):

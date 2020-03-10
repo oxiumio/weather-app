@@ -1,0 +1,46 @@
+.weather-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;    
+}
+
+.morning {
+    background: rgb(115,189,236);
+    background: -moz-linear-gradient(180deg, rgba(115,189,236,1) 0%, rgba(250,226,142,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(115,189,236,1) 0%, rgba(250,226,142,1) 100%);
+    background: linear-gradient(180deg, rgba(115,189,236,1) 0%, rgba(250,226,142,1) 100%);
+}
+
+.day {
+    background: rgb(27,85,192);
+    background: -moz-linear-gradient(180deg, rgba(27,85,192,1) 0%, rgba(129,197,242,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(27,85,192,1) 0%, rgba(129,197,242,1) 100%);
+    background: linear-gradient(180deg, rgba(27,85,192,1) 0%, rgba(129,197,242,1) 100%);
+}
+
+.evening {
+    background: rgb(19,29,79);
+    background: -moz-linear-gradient(180deg, rgba(19,29,79,1) 0%, rgba(220,146,184,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(19,29,79,1) 0%, rgba(220,146,184,1) 100%);
+    background: linear-gradient(180deg, rgba(19,29,79,1) 0%, rgba(220,146,184,1) 100%);
+}
+
+.night {
+    background: rgb(7,14,48);
+    background: -moz-linear-gradient(180deg, rgba(7,14,48,1) 0%, rgba(55,61,141,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(7,14,48,1) 0%, rgba(55,61,141,1) 100%);
+    background: linear-gradient(180deg, rgba(7,14,48,1) 0%, rgba(55,61,141,1) 100%);
+}
+
+.raining {
+    background: rgb(41,50,85);
+    background: -moz-linear-gradient(180deg, rgba(41,50,85,1) 0%, rgba(126,127,150,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(41,50,85,1) 0%, rgba(126,127,150,1) 100%);
+    background: linear-gradient(180deg, rgba(41,50,85,1) 0%, rgba(126,127,150,1) 100%);
+}
+
+.snowing {
+
+}
