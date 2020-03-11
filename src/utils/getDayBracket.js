@@ -1,4 +1,4 @@
-export default function(locationTime) {
+export default function(locationTime) {  
     if (locationTime >= 6 && locationTime < 11) {
       return "morning";
     } else if (locationTime >= 11 && locationTime < 17) {

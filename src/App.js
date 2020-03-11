@@ -26,9 +26,11 @@ class App extends Component {
       latitude !== (prevProps.weatherState.weather || {}).latitude &&
       longitude !== (prevProps.weatherState.weather || {}).latitude
     ) {
-      let localHours = +moment.utc().format("HH") + offset;
+      let localHours = +moment.utc().format("HH") + offset;      
       if (localHours < 0) {
         localHours += 24;
+      } if (localHours > 24) {
+        localHours -=24;
       }
       const bracket = getDayBracket(localHours);
       this.setState({ bracket });
