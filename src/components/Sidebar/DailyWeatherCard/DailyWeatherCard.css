@@ -1,0 +1,16 @@
+.daily-weather-card {
+    height: 3rem;
+    padding: 1rem;
+    border-top: 1px solid black;
+    display: flex;
+}
+
+.card-icon {
+    width: 3rem;
+}
+
+.weekday {
+    color: white;
+    margin-left: 1rem;
+    line-height: 1.5rem;
+}

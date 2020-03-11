@@ -1,0 +1,43 @@
+.input-container {
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;    
+}
+
+.sidebar {
+    background: rgba(0,0,0,.5);
+    padding: 2rem;
+    width: 24rem;
+    height: 100vw; 
+}
+
+.input-container input {
+    font-size: 1.5rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 2px solid rgb(255,255,255);
+    width: 20rem;        
+    background: none;
+    color: white;    
+    font-weight: 600;
+}
+
+.input-container input:focus {
+    outline: none;
+}
+
+.input-container input::placeholder {
+    color: rgba(255,255,255,.5);
+}
+
+.helper-text {
+    color: rgba(255,255,255,.5);
+    margin-top: .5rem;
+}
+
+.cards-container {
+    position: absolute;
+    bottom: 0;
+    width: 28rem;
+}

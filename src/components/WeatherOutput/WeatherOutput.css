@@ -1,0 +1,44 @@
+.current-weather {
+    position: absolute;
+    width: 44rem;
+    height: 44rem;
+    left: calc(50% - 12rem);
+    top: calc(50% - 10rem);
+}
+
+.flex-container {
+    display: flex;    
+}
+
+.icon {
+    height: 15rem;    
+    width: 15rem;    
+}
+
+.temp {
+    font-size: 7rem;
+    color: white;
+    line-height: 15rem;
+    margin-left: 2rem;
+    text-shadow: 0 0 3px rgba(0,0,0,.5)
+}
+
+.summary {
+    color: white;
+    font-size: 2rem;
+    width: 15rem;
+    text-align: center;
+    text-shadow: 0 0 3px rgba(0,0,0,.5)
+}
+
+.local-time {
+    margin-left: 2rem;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 0 0 3px rgba(0,0,0,.5)
+}
+
+.clock {
+    height: 1.5rem;
+    margin-right: .5rem;
+}

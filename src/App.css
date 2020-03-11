@@ -6,6 +6,10 @@
     left: 0;    
 }
 
+.neutral {
+    background: #76bf00;
+}
+
 .morning {
     background: rgb(115,189,236);
     background: -moz-linear-gradient(180deg, rgba(115,189,236,1) 0%, rgba(250,226,142,1) 100%);
