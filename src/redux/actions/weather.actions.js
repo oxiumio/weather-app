@@ -17,8 +17,8 @@ export const clearError = () => {
     return { type: CLEAR_ERROR }
 }
 
-export const convertLocation = location => dispatch => {    
-    axios.post("/weather/forecast", { location })
+export const convertLocation = location => async (dispatch) => {    
+    await axios.post("/weather/forecast", { location })
         .then(response => dispatch(setWeather(response.data)))
         .catch(error => dispatch(setError(error)))
 }

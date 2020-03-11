@@ -1,6 +1,5 @@
 const initState = {
     weather: null,
-    locationOptions: [],
     error: null
 }
 
