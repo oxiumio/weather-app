@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { convertLocation } from "../../redux/actions/weather.actions";
+import { convertLocation, clearWeather, clearError } from "../../redux/actions/weather.actions";
 import DailyWeatherCard from "./DailyWeatherCard/DailyWeatherCard";
 import getIcon from "../../utils/getIcon";
 import moment from "moment";
@@ -22,6 +22,8 @@ class LocationSelector extends Component {
   checkAndExecute = (ev) => {
     if (ev.key === "Enter") {
       this.convertLocationGetForecast();
+      this.props.clearWeather();
+      this.props.clearError();
     }
   }
 
@@ -69,4 +71,4 @@ const mapStateToProps = weatherState => {
   };
 };
 
-export default connect(mapStateToProps, { convertLocation })(LocationSelector);
+export default connect(mapStateToProps, { convertLocation, clearWeather, clearError })(LocationSelector);
