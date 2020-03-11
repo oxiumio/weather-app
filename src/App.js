@@ -62,17 +62,16 @@ class App extends Component {
     
     return (
       <div className={"weather-wrapper " + bracket}>        
-      {getIcon(currently).desc === "rain" ? <Rain /> : null}
-      {getIcon(currently).desc === "snow" ? <Snow /> : null}
+      {(getIcon(currently) || {}).desc === "rain" ? <Rain /> : null}
+      {(getIcon(currently) || {}).desc === "snow" ? <Snow /> : null}
         <Error clearError={this.props.clearError} error={error} errClass={error ? "enter" : "exit"} />
         <Sidebar offset={offset}/>
-        <WeatherOutput icon={getIcon(currently).icon} currently={currently} offset={offset}/>
+        <WeatherOutput icon={(getIcon(currently) || {}).icon} currently={currently} offset={offset}/>
       </div>
     );
   }
 }
-// Sunnmorsalpane - snow 
-// Munich - rain
+
 const mapStateToProps = weatherState => {
   return {
     weatherState

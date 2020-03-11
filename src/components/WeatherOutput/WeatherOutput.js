@@ -8,7 +8,7 @@ export default function(props) {
   return (
     <div className="current-weather">
       <div className="flex-container">
-        {props.icon ? <img src={props.icon} alt="props.icon" className="icon" /> : ""}
+        {props.icon ? <img src={props.icon} alt="icon" className="icon" /> : ""}
         <div className="temp">
           {props.currently ? props.currently.temperature + " °F" : ""}
         </div>
